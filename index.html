@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Hexagon Music Visualizer</h1>
+        <div class="controls">
+            <input type="file" id="audioFile" accept="audio/*">
+            <button id="micBtn">🎤 Microphone</button>
+            <button id="playPause">▶️ Play</button>
+            <div class="sliders">
+                <label>Bass: <input type="range" id="bass" min="0" max="100" value="50"></label>
+                <label>Mids: <input type="range" id="mids" min="0" max="100" value="50"></label>
+                <label>Highs: <input type="range" id="highs" min="0" max="100" value="50"></label>
+            </div>
+        </div>
+        <canvas id="visualizer"></canvas>
+    </div>
+    <script src="visualizer.js"></script>
+</body>
+</html>
