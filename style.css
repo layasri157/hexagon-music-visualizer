@@ -19,9 +19,11 @@ h1 {
     font-size: 2.5rem; 
     margin-bottom: 2rem; 
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-    -webkit-background-clip: text;
+    background-clip: text;              /* standard property */
+    -webkit-background-clip: text;      /* vendor prefix for older WebKit */
     -webkit-text-fill-color: transparent;
 }
+
 
 .controls {
     margin-bottom: 2rem;
