@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hexagon Music Visualizer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>🎵 Hexagon Music Visualizer</h1>
+
         <div class="controls">
             <input type="file" id="audioFile" accept="audio/*">
             <button id="micBtn">🎤 Microphone</button>
             <button id="playPause">▶️ Play</button>
             <div class="sliders">
-                <label>Bass: <input type="range" id="bass" min="0" max="100" value="50"></label>
-                <label>Mids: <input type="range" id="mids" min="0" max="100" value="50"></label>
-                <label>Highs: <input type="range" id="highs" min="0" max="100" value="50"></label>
+                <label>Bass
+                    <input type="range" id="bass" min="0" max="100" value="50">
+                </label>
+                <label>Mids
+                    <input type="range" id="mids" min="0" max="100" value="50">
+                </label>
+                <label>Highs
+                    <input type="range" id="highs" min="0" max="100" value="50">
+                </label>
             </div>
         </div>
+
+        <p class="helper-text">
+            Upload a track or use your microphone, then tweak Bass / Mids / Highs to shape the visuals.
+        </p>
+
         <canvas id="visualizer"></canvas>
+
+        <footer class="footer">
+            Built by Laya Sri • HTML • CSS • JavaScript • Web Audio API
+        </footer>
     </div>
+
     <script src="visualizer.js"></script>
 </body>
 </html>
